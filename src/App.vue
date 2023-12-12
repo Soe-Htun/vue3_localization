@@ -2,13 +2,10 @@
 import { ref } from 'vue'
 import Home from './views/Home.vue'
 import { setLanguage } from './i18n/index';
-
 const selectedLanguage = ref('en');
-
 const changeLanguage = () => {
   setLanguage(selectedLanguage.value);
 };
-
 </script>
 
 <template>
